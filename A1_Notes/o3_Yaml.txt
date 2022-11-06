@@ -1,0 +1,4 @@
+1: http://www.yamllint.com/
+2: docker compose logs -f web-Fe 
+3: run the duplicate with diffrent name and port: docker compose -p duplicate up -d
+        remove duplicate one:    docker compose -p  duplicate down

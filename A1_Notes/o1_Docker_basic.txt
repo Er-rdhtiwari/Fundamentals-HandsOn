@@ -1,0 +1,19 @@
+0: Manage Docker as a non-root user🔗
+        https://github.com/microsoft/vscode-docker/wiki/Troubleshooting
+        https://docs.docker.com/engine/install/linux-postinstall/
+
+1: docker run -d -p 8080:80 --name webserver nginx
+        Check in Browser: http://localhost:8080/
+2: Attach to container:
+        docker container exec -it webserver bash
+                root@15edabf4e285:/# 
+3: Docker build node app:
+        docker build --rm --pull -f "/home/errdhtiwari/Desktop/Fundamentals-HandsOn/L06-02 Using VS Code/Dockerfile" --label "com.microsoft.created-by=visual-studio-code" -t "myexpressapp:latest" "/home/errdhtiwari/Desktop/Fundamentals-HandsOn/L06-02 Using VS Code" 
+
+4: Docker run nod app: 
+        docker run --rm -d -p 3000:3000/tcp myexpressapp:latest
+
+5: Compose V1 is now marked as deprecated: docker compose v2 is currently a separate install 
+        sudo apt update && apt install docker-compose-plugin
+
+        

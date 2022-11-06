@@ -1,0 +1,12 @@
+1: docker volume prune
+2: docker volume create myvol1
+3: docker run -d --name volumetesting -v myvolv1:/app nginx:latest
+4: docker exec -it volumetesting bash
+            cd app
+            apt-get update
+            apt-get install vim
+            vim mydockervolume.txt
+            
+5: docker stop 9050653f24a4
+                docker container prune
+6: docker volume rm myvolv1
